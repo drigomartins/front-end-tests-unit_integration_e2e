@@ -1,0 +1,45 @@
+{
+  "name": "front-end-tests-unit_integration_e2e",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "expect-puppeteer": "^6.0.0",
+    "jest": "^27.3.1",
+    "puppeteer": "^10.4.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "styled-components": "^5.3.1",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "test:e2e": "react-scripts test --runTestsByPath src/tests/e2e/e2e.test.js",
+    "test:integration": "react-scripts test --runTestsByPath src/tests/integration/delete.test.js",
+    "test:unit": "react-scripts test --runTestsByPath src/tests/unit/button.test.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
