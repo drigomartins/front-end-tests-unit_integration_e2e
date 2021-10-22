@@ -81,7 +81,7 @@ export const Delete = (props) => {
     const { data, setData } = useData()
 
     const deleteValue = () => {
-        setData(data.splice(props.id, 1))
+        setData(data.length <= 1 ? [] : data.splice(props.id, 1))
         setBox(!box)
     }
 
