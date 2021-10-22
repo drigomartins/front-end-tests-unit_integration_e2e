@@ -14,7 +14,9 @@ describe("Button test", () => {
     });
 
     it("Should click Button", async () => {
-        render(<Button />);
+        render(
+            <Button />
+        );
         fireEvent.click(await screen.findByRole('button'));
     });
 
